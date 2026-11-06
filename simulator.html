@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Day Simulator | WhatIF</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Josefin+Sans:wght@700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="simulator">
+
+  <nav class="nav">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="WhatIF home"><img src="logo-wordmark.png" alt="WhatIF"></a>
+      <ul>
+        <li><a class="link" href="index.html">Home</a></li>
+        <li><a class="link active" href="main.html">Explore Careers</a></li>
+        <li><a class="link" href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="sim-wrap">
+    <div class="container">
+      <div id="picker" hidden>
+        <h1 style="font-size: 2rem;">Choose a career to live</h1>
+        <div class="grid two" id="picker-grid" style="margin-top: 20px;"></div>
+      </div>
+
+      <div class="sim-grid" id="sim" hidden>
+        <div class="sim-panel" id="stage" aria-live="polite"></div>
+        <aside class="sim-panel meters" id="hud" aria-label="Your status" hidden></aside>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <img src="logo-wordmark.png" alt="WhatIF">
+      <span>&copy; 2026 WhatIF. Prototype build.</span>
+      <span><a href="main.html">Back to careers</a></span>
+    </div>
+  </footer>
+
+  <script src="careers/investor.js"></script>
+  <script src="careers/tennis.js"></script>
+  <script src="sim.js"></script>
+</body>
+</html>

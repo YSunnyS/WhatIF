@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore Careers | WhatIF</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Josefin+Sans:wght@700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="main">
+
+  <nav class="nav">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="WhatIF home"><img src="logo-wordmark.png" alt="WhatIF"></a>
+      <ul>
+        <li><a class="link" href="index.html">Home</a></li>
+        <li><a class="link active" href="main.html">Explore Careers</a></li>
+        <li><a class="link" href="about.html">About</a></li>
+        <li><a class="btn small" href="simulator.html?career=investor">Try a Demo</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section style="padding-bottom: 20px;">
+    <div class="container center">
+      <span class="eyebrow">Career library</span>
+      <h1 style="font-size: clamp(2rem, 4vw, 2.7rem);">Explore careers</h1>
+      <p class="sub">Choose a career and spend one working day in it. If you're unsure where to start, try something far from what you would normally pick. Surprises are the point.</p>
+      <div class="filters" id="filters" role="group" aria-label="Filter careers by field">
+        <button class="chip on" data-filter="all">All</button>
+        <button class="chip" data-filter="business">Business &amp; Finance</button>
+        <button class="chip" data-filter="sports">Sports</button>
+        <button class="chip" data-filter="health">Health &amp; Science</button>
+        <button class="chip" data-filter="tech">Technology &amp; Design</button>
+        <button class="chip" data-filter="public">Law &amp; Public Service</button>
+        <button class="chip" data-filter="creative">Creative</button>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top: 0;">
+    <div class="container">
+      <div class="grid three" id="career-grid">
+
+        <div class="card career-card" data-career="investor" data-cat="business">
+          <span class="tag">Playable demo</span>
+          <div class="field">Business &amp; Finance</div>
+          <h3>Investment Analyst</h3>
+          <p>Review a company case, weigh the risks, and decide whether to invest.</p>
+          <div class="push"><a class="btn small" href="simulator.html?career=investor">Start this day</a></div>
+        </div>
+
+        <div class="card career-card" data-career="tennis" data-cat="sports">
+          <span class="tag">Playable demo</span>
+          <div class="field">Sports</div>
+          <h3>Tennis Pro</h3>
+          <p>Train, recover, study film and manage your mindset through a full day on the circuit.</p>
+          <div class="push"><a class="btn small" href="simulator.html?career=tennis">Start this day</a></div>
+        </div>
+
+        <div class="card career-card locked" data-cat="health">
+          <span class="tag soon">Coming soon</span>
+          <div class="field">Health &amp; Science</div>
+          <h3>Emergency Room Nurse</h3>
+          <p>Triage patients, prioritize under pressure, and communicate with families.</p>
+          <div class="push"><button class="btn small secondary" disabled>In development</button></div>
+        </div>
+
+        <div class="card career-card locked" data-cat="tech">
+          <span class="tag soon">Coming soon</span>
+          <div class="field">Technology &amp; Design</div>
+          <h3>Software Engineer</h3>
+          <p>Debug a live issue, plan a feature with teammates, and ship it.</p>
+          <div class="push"><button class="btn small secondary" disabled>In development</button></div>
+        </div>
+
+        <div class="card career-card locked" data-cat="tech">
+          <span class="tag soon">Coming soon</span>
+          <div class="field">Technology &amp; Design</div>
+          <h3>Architect</h3>
+          <p>Balance a client's vision, a tight budget and building codes.</p>
+          <div class="push"><button class="btn small secondary" disabled>In development</button></div>
+        </div>
+
+        <div class="card career-card locked" data-cat="public">
+          <span class="tag soon">Coming soon</span>
+          <div class="field">Law &amp; Public Service</div>
+          <h3>Defense Attorney</h3>
+          <p>Prepare a case, advise a client and decide how to argue in court.</p>
+          <div class="push"><button class="btn small secondary" disabled>In development</button></div>
+        </div>
+
+        <div class="card career-card locked" data-cat="creative">
+          <span class="tag soon">Coming soon</span>
+          <div class="field">Creative</div>
+          <h3>Journalist</h3>
+          <p>Chase a story, verify your sources and decide what to publish on deadline.</p>
+          <div class="push"><button class="btn small secondary" disabled>In development</button></div>
+        </div>
+
+        <div class="card career-card locked" data-cat="creative">
+          <span class="tag soon">Coming soon</span>
+          <div class="field">Creative</div>
+          <h3>Head Chef</h3>
+          <p>Run a kitchen through a dinner rush with a supplier problem and a full house.</p>
+          <div class="push"><button class="btn small secondary" disabled>In development</button></div>
+        </div>
+
+        <div class="card career-card locked" data-cat="health">
+          <span class="tag soon">Coming soon</span>
+          <div class="field">Health &amp; Science</div>
+          <h3>Marine Biologist</h3>
+          <p>Plan a research dive, collect data and interpret surprising results.</p>
+          <div class="push"><button class="btn small secondary" disabled>In development</button></div>
+        </div>
+
+      </div>
+
+      <p class="center sub" style="margin-top: 40px;">Want to see a career added? <a href="about.html#contact">Let us know</a>.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <img src="logo-wordmark.png" alt="WhatIF">
+      <span>&copy; 2026 WhatIF. All rights reserved.</span>
+      <span><a href="index.html">Home</a> &middot; <a href="main.html">Explore</a> &middot; <a href="about.html">About</a></span>
+    </div>
+  </footer>
+
+  <script src="hub.js"></script>
+</body>
+</html>
